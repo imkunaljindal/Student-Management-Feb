@@ -11,7 +11,7 @@ public class StudentController {
     Map<Integer,Student> db = new HashMap<>();  // database
 
     @GetMapping("/get_info")
-    Student getStudent(@RequestParam("id") int admnNo, @RequestParam("id2") int admnNo2){
+    Student getStudent(@RequestParam("id") int admnNo){
         return db.get(admnNo);
     }
 
