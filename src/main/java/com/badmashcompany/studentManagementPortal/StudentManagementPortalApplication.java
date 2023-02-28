@@ -7,6 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class StudentManagementPortalApplication {
 
 	public static void main(String[] args) {
+
+		StudentController studentController = new StudentController();
+		studentController.logs();
 		SpringApplication.run(StudentManagementPortalApplication.class, args);
 	}
 
